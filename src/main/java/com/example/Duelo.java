@@ -25,11 +25,6 @@ public class Duelo {
             exibirEstado(slimeA, slimeB);
             realizarJogada(atacante, defensor, input, nomeSlime);
 
-            if (atacante.isInvulneravel()) {
-                defensor.desativarInvulnerabilidade();
-                atacante.resetarMultiplicador();
-            }
-
             turno++;
 
             atacante.aumentarEnergia(2);
