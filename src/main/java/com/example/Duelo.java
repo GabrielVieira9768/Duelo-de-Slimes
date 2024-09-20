@@ -68,6 +68,7 @@ public class Duelo {
             if (!slimeA.estaVivo() || !slimeB.estaVivo()) {
                 jogoAtivo = false;
                 System.out.println((slimeA.estaVivo() ? "Slime A" : "Slime B") + " venceu o duelo!");
+                System.exit(0);
             }
 
         } while (acao != 0);
