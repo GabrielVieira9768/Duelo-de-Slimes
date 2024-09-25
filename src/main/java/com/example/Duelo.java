@@ -27,6 +27,11 @@ public class Duelo {
 
             turno++;
 
+            if (defensor instanceof SlimeDragao) {
+                ((SlimeDragao)defensor).desativarInvulnerabilidade();
+                defensor.resetarMultiplicador();
+            }
+
             atacante.aumentarEnergia(2);
             atacante.desenergizar();
         }

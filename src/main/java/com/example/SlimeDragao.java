@@ -13,9 +13,9 @@ public class SlimeDragao extends Slime {
             System.out.println(nomeSlime + " usou a habilidade especial!");
             decrementarEnergia(4);
             this.multiplicador += 0.2;
-            System.out.println(nomeSlime + " teve seu multiplicador aumentado em 0.2 neste turno!");
+            System.out.println(nomeSlime + " teve seu multiplicador aumentado em 0.2 até o próximo turno!");
             ativarInvulnerabilidade();
-            System.out.println(nomeSlime + " está invulnerável neste turno!");
+            System.out.println(nomeSlime + " está invulnerável até o próximo turno!");
         } else {
             System.out.println("Sem energia suficiente para esta ação!");
         }
